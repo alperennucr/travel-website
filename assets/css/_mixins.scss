@@ -1,0 +1,153 @@
+@mixin __cityCards {
+    width: 552px;
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+        width: 552px;
+        height: 398px;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        font-size: 26px;
+        font-family: 'Montserrat';
+        color: #163235;
+        word-wrap: break-word; // cümle taşarken kırılıp sonraki satıra geçer.
+    }
+
+    .title-city {
+        font-size: 38px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        color: #163235;
+        display: block;
+    }
+
+    .pricegrp {
+        width: 552px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .imggrp {
+            img {
+                width: 33px;
+                height: 33px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        span {
+            font-size: 31px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            color: #163235;
+        }
+    }
+
+    .text-small {
+        width: 558px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        font-family: 'Montserrat';
+        color: #163235;
+    }
+}
+
+@mixin scroolbar-special {
+
+    body::-webkit-scrollbar {
+        width: 1.5em;
+        /* burada belirtilen width sadece dikeyde,
+        /* height ise sadece yatayda etkiler
+        */
+    }
+
+    body::-webkit-scrollbar-track {
+        //kaydırma çubuğunun(yani ilerleme çubuğunun) izi .
+        background-color: hsl(200, 73%, 90% / 1); // x durumunda 3. sıradaki 58%
+        border-radius: 100vw;
+        margin-block: 0.5em;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: hsl(200, 100%, 30% / 1);
+        border-radius: 100vw;
+        //border: 0.20em solid hsl(200, 73%, 58% / 1); // x durumunda burası açık
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: hsl(200, 100%, 25% / 1);
+    }
+}
+
+@mixin commentFirstAndSecond {
+    width: 918px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    line-height: 41px;
+
+    &__commaAndParag {
+        display: flex;
+        justify-content: space-evenly; // her yerden eşit aralık
+        align-content: center;
+
+        img {
+            width: 53px;
+            height: 42px;
+        }
+
+        p {
+            width: 650px;
+            height: 230px;
+            font-size: 26px;
+            font-family: 'Montserrat';
+            color: #000000;
+
+        }
+    }
+
+    &__profile {
+        height: 72px;
+        width: 450px;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        margin:0px 0px 0px 175px;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__nameAndTitle {
+            height: 72px;
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: left;
+
+            div:nth-child(1) {
+                font-size: 28px;
+                font-family: 'Montserrat';
+                color: #000000;
+            }
+
+            div:nth-child(2) {
+                font-size: 28px;
+                font-family: 'Montserrat';
+                color: #848484;
+            }
+        }
+    }
+}
