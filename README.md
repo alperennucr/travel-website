@@ -36,13 +36,22 @@ Kodlarda BEM syntax kullanımının örnekleri verilmiştir.
 
 Turkish Explain
 -----------------
-    1- Genelde XD dökerken yapılan şeylerden biri de, çoğu yerde aynı olan yapıları(butonlar,kartlar gibi) tek bir class'a tanımlayıp çok yerde kullanmaktır. Mesela sayfadaki başlıkları inceleyip aynı yapıda olanları sayıp ona göre kaç class oluşacağını da hesaplayabilirsin.
+    1- Genelde XD dökerken yapılan şeylerden biri de, çoğu yerde aynı olan yapıları(butonlar,kartlar gibi) tek bir class'a tanımlayıp
+    çok yerde kullanmaktır. Mesela sayfadaki başlıkları inceleyip aynı yapıda olanları sayıp ona göre kaç class oluşacağını da hesaplayabilirsin.
     2- Header'ı her zaman ikiye parçala,gerekirse 3'e.
-    3- Artık projelerde reset.css oluşturup tüm tarayıcılarda reset atan kodları kullanacağım. Reset.css'i style.css'in üstüne yaz ki style.css'i ezmesin.
+    3- Artık projelerde reset.css oluşturup tüm tarayıcılarda reset atan kodları kullanacağım. Reset.css'i style.css'in üstüne yaz ki style.css'i
+    ezmesin.
     4- CSS kodlarını BEM syntax ile yazmaya başla, bu sayede gereksiz kod kullanımı ortadan kalkar.
     5- Tüm divlere tek tek margin verip ortalamak yerine ortak container'da ortalamak daha mantıklı olur.
     6- XD dökerken web sitesi zoom'u %75 olmalı, tam ekran boyut için.
-    7- Bu projede ilk defa BEM syntax deniyorum hatalarıyla vs. elimden geleni yaptım, şuan yapmak istediğim birşey var ama BEM'i ilk defa denediğim ve bazı yerlerde hata yapmış olabileceğim için şuan denemeyeceğim. XD'yi siteye çevirirken XD yapısında bazı şeyler klon halinde oluyor yani materyal özellikleri aynı oluyor, bir materyalin birçok nesneye atanması gibi. Bunu C#'da constructor olarak düşünebilir, inşa edilen yapıyı birçok yerde kullanmak diyebiliriz. İşte XD'lerde bu constructor halde birçok nesne var. Bir sonraki XD'lerde bunları tespit ederek constructor yapısını CSS'de oluştur; hem kod kalabalığı kalkıyor(temiz kod),hem daha az kod yazıldığı için hız açısından da verimli oluyor, hem de zamandan oldukça tasarruf ediliyor. Normalde yapmam gerekirdi ama projeye başlarken dağınık başladığım için şuan uygulaması gerçekten zor olur.Not: Projenin sonlarındayım, BEM syntax o kadar efsane ki eğer bunu uygulamasaydım aşırı uzun sürerdi
+    7- Bu projede ilk defa BEM syntax deniyorum hatalarıyla vs. elimden geleni yaptım, şuan yapmak istediğim birşey var ama BEM'i ilk defa
+    denediğim ve bazı yerlerde hata yapmış olabileceğim için şuan denemeyeceğim. XD'yi siteye çevirirken XD yapısında bazı şeyler klon
+    halinde oluyor yani materyal özellikleri aynı oluyor, bir materyalin birçok nesneye atanması gibi. Bunu C#'da constructor olarak 
+    düşünebilir, inşa edilen yapıyı birçok yerde kullanmak diyebiliriz. İşte XD'lerde bu constructor halde birçok nesne var. Bir sonraki XD'lerde
+    bunları tespit ederek constructor yapısını CSS'de oluştur; hem kod kalabalığı kalkıyor(temiz kod),hem daha az kod yazıldığı için hız 
+    açısından da verimli oluyor, hem de zamandan oldukça tasarruf ediliyor. Normalde yapmam gerekirdi ama projeye başlarken dağınık 
+    başladığım için şuan uygulaması gerçekten zor olur.Not: Projenin sonlarındayım, BEM syntax o kadar efsane ki eğer bunu uygulamasaydım
+    aşırı uzun sürerdi
     8- Scrollbar özelleştirmeyi öğrendim.
     9-CSS'den Background ile atılan resimlerin boyutlandırılması için background-size olduğunu öğrendim.
     10-SASS'ın özelliği olan @mixin leri öğrendim ve daha sık kullanmaya başladım.
@@ -50,9 +59,11 @@ Turkish Explain
     .
     BEM kullanmanın faydaları:
     --------------------------
-    1- If we are reading the markup instead of CSS, we should be able to quickly get an idea of which element depends on another (in the previous example we can see that .btn__price depends on .btn, even if we don’t know what that does just yet.)
+    1- If we are reading the markup instead of CSS, we should be able to quickly get an idea of which element depends on another (in the previous example we can 
+    see that .btn__price depends on .btn, even if we don’t know what that does just yet.)
     2- Designers and developers can consistently name components for easier communication between team members.
-    3- This is the main reason we end up with bloated code bases, full of legacy and unknown CSS that we daren’t touch. We lack the confidence to be able to work with and modify existing styles because we fear the consequences of CSS’ globally operating and leaky nature. Almost all problems with CSS at scale boil down to confidence (or lack thereof): People don’t know what things do any more. People daren’t make changes because they don’t know how far reaching the effects will be. If you follow strict BEM conventions, you will be able to update and add to your CSS in the future with the full confidence that your changes will not have side effects.
+    3- This is the main reason we end up with bloated code bases, full of legacy and unknown CSS that we daren’t touch. We lack the confidence to be able to work with and modify existing styles because we fear the consequences of CSS’ globally operating and leaky nature. Almost all problems with CSS at scale boil down to confidence (or lack thereof): People don’t know what things do any more. People daren’t make changes because they don’t know how far reaching the effects will be.
+If you follow strict BEM conventions, you will be able to update and add to your CSS in the future with the full confidence that your changes will not have side effects.
     -------------------
     Üstteki yazıyı ingilizce bir kaynaktan aldım ve çeviriden bozuk bir türkçe ile atmaktansa
     nasıl olsa anlıyorum,ingilizcesini attım.
