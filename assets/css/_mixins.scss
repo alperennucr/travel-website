@@ -72,7 +72,7 @@
 
     body::-webkit-scrollbar-track {
         //kaydırma çubuğunun(yani ilerleme çubuğunun) izi .
-        background-color: hsl(200, 73%, 90% / 1); // x durumunda 3. sıradaki 58%
+        background-color: transparent; // x durumunda 3. sıradaki 58%
         border-radius: 100vw;
         margin-block: 0.5em;
     }
