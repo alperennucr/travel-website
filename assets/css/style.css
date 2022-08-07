@@ -33,7 +33,7 @@ html body::-webkit-scrollbar {
   */
 }
 html body::-webkit-scrollbar-track {
-  background-color: hsl(200deg, 73%, 90%);
+  background-color: transparent;
   border-radius: 100vw;
   margin-block: 0.5em;
 }
